@@ -1,0 +1,226 @@
+object fMain: TfMain
+  Left = 1224
+  Height = 363
+  Top = 309
+  Width = 316
+  Caption = 'Калькулятор'
+  ClientHeight = 363
+  ClientWidth = 316
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Edit1: TEdit
+    Left = 24
+    Height = 56
+    Top = 16
+    Width = 272
+    AutoSize = False
+    Color = clBtnHighlight
+    Enabled = False
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -37
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ClearEntry: TButton
+    Left = 136
+    Height = 46
+    Top = 80
+    Width = 46
+    Caption = 'ce'
+    TabOrder = 1
+    OnClick = ClearEntryClick
+  end
+  object Clear: TButton
+    Left = 192
+    Height = 46
+    Top = 80
+    Width = 46
+    Caption = 'c'
+    TabOrder = 2
+    OnClick = ClearClick
+  end
+  object degree: TButton
+    Left = 248
+    Height = 46
+    Top = 80
+    Width = 46
+    Caption = 'Кор'
+    TabOrder = 3
+    OnClick = degreeClick
+  end
+  object Seven: TButton
+    Left = 24
+    Height = 46
+    Top = 136
+    Width = 46
+    Caption = '7'
+    TabOrder = 4
+    OnClick = ClickBut
+  end
+  object Eight: TButton
+    Left = 80
+    Height = 46
+    Top = 136
+    Width = 46
+    Caption = '8'
+    TabOrder = 5
+    OnClick = ClickBut
+  end
+  object Nine: TButton
+    Left = 136
+    Height = 46
+    Top = 136
+    Width = 46
+    Caption = '9'
+    TabOrder = 6
+    OnClick = ClickBut
+  end
+  object Divide: TButton
+    Left = 192
+    Height = 46
+    Top = 136
+    Width = 46
+    Caption = '/'
+    TabOrder = 7
+    OnClick = ClickZnak
+  end
+  object square: TButton
+    Left = 248
+    Height = 46
+    Top = 136
+    Width = 46
+    Caption = 'x^2'
+    TabOrder = 8
+    OnClick = squareClick
+  end
+  object Four: TButton
+    Left = 24
+    Height = 46
+    Top = 192
+    Width = 46
+    Caption = '4'
+    TabOrder = 9
+    OnClick = ClickBut
+  end
+  object Five: TButton
+    Left = 80
+    Height = 46
+    Top = 192
+    Width = 46
+    Caption = '5'
+    TabOrder = 10
+    OnClick = ClickBut
+  end
+  object Six: TButton
+    Left = 136
+    Height = 46
+    Top = 192
+    Width = 46
+    Caption = '6'
+    TabOrder = 11
+    OnClick = ClickBut
+  end
+  object Multiply: TButton
+    Left = 192
+    Height = 46
+    Top = 192
+    Width = 46
+    Caption = '*'
+    TabOrder = 12
+    OnClick = ClickZnak
+  end
+  object Divide_One_on_X: TButton
+    Left = 248
+    Height = 46
+    Top = 192
+    Width = 46
+    Caption = '1/x'
+    TabOrder = 13
+    OnClick = Divide_One_on_XClick
+  end
+  object One: TButton
+    Left = 24
+    Height = 46
+    Top = 248
+    Width = 46
+    Caption = '1'
+    TabOrder = 14
+    OnClick = ClickBut
+  end
+  object Two: TButton
+    Left = 80
+    Height = 46
+    Top = 248
+    Width = 46
+    Caption = '2'
+    TabOrder = 15
+    OnClick = ClickBut
+  end
+  object Three: TButton
+    Left = 136
+    Height = 46
+    Top = 248
+    Width = 46
+    Caption = '3'
+    TabOrder = 16
+    OnClick = ClickBut
+  end
+  object minus: TButton
+    Left = 192
+    Height = 46
+    Top = 248
+    Width = 46
+    Caption = '-'
+    TabOrder = 17
+    OnClick = ClickZnak
+  end
+  object equal: TButton
+    Left = 248
+    Height = 102
+    Top = 248
+    Width = 46
+    Caption = '='
+    TabOrder = 18
+    OnClick = equalClick
+  end
+  object Null: TButton
+    Left = 24
+    Height = 46
+    Top = 304
+    Width = 102
+    Caption = '0'
+    TabOrder = 19
+    OnClick = ClickBut
+  end
+  object comma: TButton
+    Left = 136
+    Height = 46
+    Top = 304
+    Width = 46
+    Caption = ','
+    TabOrder = 20
+    OnClick = ClickBut
+  end
+  object Plus: TButton
+    Left = 192
+    Height = 46
+    Top = 304
+    Width = 46
+    Caption = '+'
+    TabOrder = 21
+    OnClick = ClickZnak
+  end
+  object Clear_Last: TButton
+    Left = 24
+    Height = 46
+    Top = 80
+    Width = 102
+    Caption = '<-'
+    TabOrder = 22
+    OnClick = Clear_LastClick
+  end
+end
