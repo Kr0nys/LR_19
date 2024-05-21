@@ -37,14 +37,15 @@ type
     Edit1: TEdit;
     procedure ClearEntryClick(Sender: TObject);
     procedure Clear_LastClick(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
     procedure ClearClick(Sender: TObject);
     procedure degreeClick(Sender: TObject);
     procedure Divide_One_on_XClick(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
     procedure squareClick(Sender: TObject);
     procedure ClickZnak(Sender: TObject);
     procedure ClickBut(Sender: TObject);
     procedure equalClick(Sender: TObject);
+    procedure Zapyt(Sender: TObject);
 
 
 
@@ -64,12 +65,26 @@ implementation
 
 { TfMain }
 
+procdeure TfMain.Edit1Change(Sender: TObject);
+begin
+
+end;
+
+procedure TfMain.Zapyt(Sender: TObject);
+var k2:AnsiString;
+  k1:int64;
+begin
+  k2:=Edit1.Text;
+  k1:= Pos(',',k2);
+   if k1 = 0 then
+      Edit1.Text:=Edit1.Text + (Sender as TButton).Caption
+   else
+    ShowMessage('Введите число');
+end;
 
 procedure TfMain.ClickBut(Sender: TObject);
 begin
-
   Edit1.Text:=Edit1.Text + (Sender as TButton).Caption;
-
 end;
 
 
@@ -125,6 +140,7 @@ begin
   end;
   end;
 end;
+
 
 procedure TfMain.ClearEntryClick(Sender: TObject);
 begin

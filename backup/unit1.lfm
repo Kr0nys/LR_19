@@ -1,12 +1,16 @@
 object fMain: TfMain
-  Left = 1224
+  Left = 1274
   Height = 363
-  Top = 309
+  Top = 383
   Width = 316
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
   Caption = 'Калькулятор'
   ClientHeight = 363
   ClientWidth = 316
   DesignTimePPI = 120
+  DoubleBuffered = False
+  ParentDoubleBuffered = False
   LCLVersion = '3.2.0.0'
   object Edit1: TEdit
     Left = 24
@@ -24,6 +28,7 @@ object fMain: TfMain
     ParentBidiMode = False
     ParentFont = False
     TabOrder = 0
+    OnChange = Edit1Change
   end
   object ClearEntry: TButton
     Left = 136
@@ -203,7 +208,7 @@ object fMain: TfMain
     Width = 46
     Caption = ','
     TabOrder = 20
-    OnClick = ClickBut
+    OnClick = Zapyt
   end
   object Plus: TButton
     Left = 192
